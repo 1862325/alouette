@@ -82,5 +82,11 @@ class Alouette {
 	 * @return string
 	 */
 
+	 static public function actionMembre($action, $membre){
+		$resultat='';
+		$resultat .= '<div class="appel">Je te '.$action.' la '.$membre.'</div>';
+		$resultat .= '<div class="reponse">Je te '.$action.' la '.$membre.'</div>';
+		return $resultat;
+	 }
 
 }
